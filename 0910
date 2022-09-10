@@ -1,0 +1,149 @@
+a = []
+type(a)
+a[0] # list index out of range 정의할 수 없음
+a = [4, 3, 2, 1]
+a[0]
+a = list(range(101))
+a
+a[2:7]
+a[[1,6,9]]
+
+a=[1,2,3]
+del a[1]
+a
+a = list(range(101))
+a
+del a[0:10]
+a
+
+#리스트 요소 제거 del remove pop
+
+b = list(range(5))
+b
+a+b
+
+#append a에 적용할 수 있는 함수
+a. append()
+a.append("a")
+a
+a.append([0,3,5])
+a
+
+# 리스트 그대로 더하기
+len(a)
+a[-1]
+type(a[-1])
+# a[-1]이 리스트이기 때문에
+a[-1][1]
+
+# extend 리스트만을 받을 수 있음
+a. extend([0,3,5])
+a
+
+
+a= "Life is too short, You need python"
+a
+a[-1:-5:1]
+a[-1:-5:-1]
+a[::-1]
+a[::1]
+
+number = 10
+day = "three"
+"I ate {0} apples, so I was sick for {1} days" . format(number, day)
+"I ate {0} apples, so I was sick for {1} days" . format(number=number, day=day)
+
+
+### list
+a = [1, 2, 3, ['a','b', 'c'], 4, 5]
+a[2:5]
+a[3][2]
+a= [1,2,3]
+str(a[2])+ "hi"
+
+# 리스트에서 값 수정하기
+a = [1,2,3]
+a[2] = 4
+a
+
+# del 함수 리스트 요소 삭제하기1.
+a = [1,2,3]
+del a[1]
+a
+# 슬라이싱 기법을 사용해 리스트의 요소 여러개를 한꺼번에 삭제
+a = [1,2,3,4,5]
+del a[2:]
+a
+
+# remove 함수 리스트 요소 삭제하기2
+# remove(x) 리스트에서 첫번째로 나오는 x를 삭제
+a = [1,2,3,1,2,3]
+a.remove(3)
+a # a가 3이라는 값을 2개 가지고 있을 경우 첫 번쨰 3만 제거
+
+a.remove(3)
+a # remove(3)을 한 번 더 실행하면 다시 3이 삭제됨
+
+# pop 함수    리스트 요소 삭제하기3
+# 리스트의 맨 마지막 요소를 돌려주고 그 요소는 삭제한다
+a = [1,2,3]
+a.pop()
+a
+a.pop(1)
+a
+
+
+# append 함수  리스트에 요소 추가
+# append(x) 리스트의 맨 마지막에 x를 추가하는 함수
+a = [1,2,3]
+a.append(4)
+a
+
+a.append([5,6]) #리스트 안에 리스트를 추가하기
+a
+
+# sort 함수  리스트 정렬하기
+a = [1,4,3,2]
+a.sort()
+a
+
+a = ['a','c','b']
+a.sort()
+a
+
+# reverse 리스트 뒤집기
+# 리스트를 역순으로 뒤집기 현재의 리스트를 그대로 거꾸로 뒤집기
+a = ['a','c','b']
+a.reverse()
+a
+
+# index 위치반환
+# index(x) 리스트에 x값이 있으면 x의 위치값을 돌려준다
+a = [1,2,3]
+a.index(3)
+a.index(1)
+a.index(0) # 값 0은 a 리스트에 존재하지 않기 때문에 오류발생
+
+# insert 리스트에 요소 삽입
+# insert(a,b) a번째 위치에 b를 삽입하는 함수
+a = [1,2,3]
+a. insert(0,4)
+a
+a. insert(3,5)
+a
+
+# count 리스트에 포함된 요소 x의 개수 세기 
+# count(x) 리스트 안에 x가 몇 개 있는지 조사해 개수 돌려줌
+a = [1,2,3,1]
+a.count(1)
+
+# extend 리스트 확장
+# extend(x)에서 x에는 리스트만 올 수 있으며 원래의 a 리스트에 x 리스트 더함
+a = [1,2,3]
+a.extend([4,5])
+a
+b = [6,7]
+a. extend(b)
+a
+# a.extend([4,5])는 a+=[4,5] 와 동일하다
+#  
